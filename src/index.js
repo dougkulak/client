@@ -2,6 +2,7 @@ const AjaxClient = require('./ajaxClient')
 const ApiClient = require('./apiClient')
 const WebStoreClient = require('./webstoreClient')
 
+const ProductBrands = require('./api/productBrands')
 const ProductCategories = require('./api/productCategories')
 const Products = require('./api/products/products')
 const ProductOptions = require('./api/products/options')
@@ -64,6 +65,7 @@ class Client {
     this.products.options.values = new ProductOptionValues(apiClient);
     this.products.variants = new ProductVariants(apiClient);
     this.products.images = new ProductImages(apiClient);
+    this.productBrands = new ProductBrands(apiClient);
     this.productCategories = new ProductCategories(apiClient);
     this.customers = new Customers(apiClient);
     this.orders = new Orders(apiClient);

@@ -82,6 +82,13 @@ api.productCategories.create({ name: 'Shoes' })
 * `api.authorize(baseUrl, user, pass)`
 * `api.sitemap.list()`
 * `api.sitemap.retrieve(path)`
+* `api.productBrand.list()`
+* `api.productBrand.retrieve(id)`
+* `api.productBrand.create(data)`
+* `api.productBrand.update(id, data)`
+* `api.productBrand.delete(id)`
+* `api.productBrand.uploadImage(brandId, formData)`
+* `api.productBrand.deleteImage(id)`
 * `api.productCategories.list()`
 * `api.productCategories.retrieve(id)`
 * `api.productCategories.create(data)`
